@@ -1,28 +1,37 @@
 /* ==================== Dairy Theme Colors & Variables ==================== */
 :root {
     /* Primary Dairy Colors - Cream, Golden Yellow, White */
-    --primary-dairy: #f4a460;        /* Sandy Brown/Golden */
-    --secondary-dairy: #ffd700;      /* Golden Yellow */
-    --cream-color: #fff8dc;          /* Cornsilk Cream */
-    --light-cream: #fffaf0;          /* Floral White */
-    --dark-cream: #f5deb3;           /* Wheat */
-    
+    --primary-dairy: #f4a460;
+    /* Sandy Brown/Golden */
+    --secondary-dairy: #ffd700;
+    /* Golden Yellow */
+    --cream-color: #fff8dc;
+    /* Cornsilk Cream */
+    --light-cream: #fffaf0;
+    /* Floral White */
+    --dark-cream: #f5deb3;
+    /* Wheat */
+
     /* Accent Colors */
-    --ghee-gold: #d4af37;            /* Gold */
+    --ghee-gold: #d4af37;
+    /* Gold */
     --milk-white: #ffffff;
-    --dairy-brown: #8b7355;          /* Brown for text */
-    --fresh-green: #90ee90;          /* Light Green */
-    
+    --dairy-brown: #8b7355;
+    /* Brown for text */
+    --fresh-green: #90ee90;
+    /* Light Green */
+
     /* Gradients */
     --gradient-dairy: linear-gradient(135deg, #ffd700 0%, #f4a460 100%);
     --gradient-cream: linear-gradient(135deg, #fffaf0 0%, #fff8dc 100%);
     --gradient-gold: linear-gradient(135deg, #d4af37 0%, #ffd700 100%);
-    
+
     /* Text Colors */
-    --text-primary-dairy: #5d4e37;   /* Dark Brown */
+    --text-primary-dairy: #5d4e37;
+    /* Dark Brown */
     --text-secondary-dairy: #8b7355;
     --text-white: #ffffff;
-    
+
     /* Spacing & Transitions */
     --transition: all 0.3s ease;
     --transition-smooth: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
@@ -677,11 +686,30 @@ body {
     animation: dropFall 15s linear infinite;
 }
 
-.drop-1 { left: 10%; animation-delay: 0s; }
-.drop-2 { left: 30%; animation-delay: 3s; }
-.drop-3 { left: 50%; animation-delay: 6s; }
-.drop-4 { left: 70%; animation-delay: 9s; }
-.drop-5 { left: 90%; animation-delay: 12s; }
+.drop-1 {
+    left: 10%;
+    animation-delay: 0s;
+}
+
+.drop-2 {
+    left: 30%;
+    animation-delay: 3s;
+}
+
+.drop-3 {
+    left: 50%;
+    animation-delay: 6s;
+}
+
+.drop-4 {
+    left: 70%;
+    animation-delay: 9s;
+}
+
+.drop-5 {
+    left: 90%;
+    animation-delay: 12s;
+}
 
 /* ==================== About Section ==================== */
 .about-section {
@@ -1790,6 +1818,7 @@ textarea.form-control-dairy {
         opacity: 0;
         transform: translateY(30px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -1801,6 +1830,7 @@ textarea.form-control-dairy {
         opacity: 0;
         transform: translateX(30px);
     }
+
     to {
         opacity: 1;
         transform: translateX(0);
@@ -1808,18 +1838,24 @@ textarea.form-control-dairy {
 }
 
 @keyframes float {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: translateY(0);
     }
+
     50% {
         transform: translateY(-20px);
     }
 }
 
 @keyframes pulse {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: scale(1);
     }
+
     50% {
         transform: scale(1.05);
     }
@@ -1830,12 +1866,15 @@ textarea.form-control-dairy {
         top: -10%;
         opacity: 0;
     }
+
     10% {
         opacity: 0.5;
     }
+
     90% {
         opacity: 0.5;
     }
+
     100% {
         top: 110%;
         opacity: 0;
@@ -1843,9 +1882,12 @@ textarea.form-control-dairy {
 }
 
 @keyframes swing {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: rotate(-10deg);
     }
+
     50% {
         transform: rotate(10deg);
     }
@@ -1857,37 +1899,37 @@ textarea.form-control-dairy {
         padding: 80px 0 60px;
         min-height: auto;
     }
-    
+
     .hero-title {
         font-size: 42px;
     }
-    
+
     .hero-subtitle {
         font-size: 24px;
     }
-    
+
     .hero-product-showcase {
         height: 400px;
         margin-top: 50px;
     }
-    
+
     .product-circle {
         width: 200px;
         height: 200px;
     }
-    
+
     .section-title {
         font-size: 36px;
     }
-    
+
     .about-floating-image {
         display: none;
     }
-    
+
     .navbar-collapse {
         display: none !important;
     }
-    
+
     .usp-grid {
         grid-template-columns: 1fr;
     }
@@ -1898,106 +1940,106 @@ textarea.form-control-dairy {
         font-size: 12px;
         margin-right: 10px;
     }
-    
+
     .topbar-right {
         text-align: left;
         margin-top: 5px;
     }
-    
+
     .hero-section {
         padding: 60px 0 40px;
     }
-    
+
     .hero-title {
         font-size: 32px;
     }
-    
+
     .hero-subtitle {
         font-size: 20px;
     }
-    
+
     .hero-text {
         font-size: 16px;
     }
-    
+
     .hero-buttons {
         flex-direction: column;
     }
-    
+
     .btn-primary-dairy,
     .btn-outline-dairy {
         width: 100%;
         text-align: center;
     }
-    
+
     .hero-features {
         justify-content: center;
     }
-    
+
     .hero-product-showcase {
         height: 300px;
     }
-    
+
     .product-circle {
         width: 150px;
         height: 150px;
     }
-    
+
     .circle-2 {
         right: 20px;
     }
-    
+
     .circle-3 {
         left: 60px;
     }
-    
+
     .section-title {
         font-size: 28px;
     }
-    
+
     .about-stats {
         flex-direction: column;
     }
-    
+
     .why-choose-section {
         padding: 30px 20px;
     }
-    
+
     .newsletter-dairy-wrapper {
         padding: 30px 20px;
     }
-    
+
     .newsletter-content {
         flex-direction: column;
         text-align: center;
     }
-    
+
     .newsletter-dairy-title {
         font-size: 24px;
     }
-    
+
     .input-group-dairy {
         flex-direction: column;
         border-radius: 15px;
     }
-    
+
     .form-control-newsletter {
         border-radius: 15px 15px 0 0;
     }
-    
+
     .btn-newsletter-dairy {
         border-radius: 0 0 15px 15px;
     }
-    
+
     .footer-dairy-bottom-links {
         justify-content: flex-start;
         margin-top: 15px;
     }
-    
+
     .contact-form-dairy-wrapper {
         padding: 30px 20px;
     }
-    
+
     .scroll-top-dairy,
     .whatsapp-float-dairy {
         right: 15px;
@@ -2008,20 +2050,20 @@ textarea.form-control-dairy {
     .hero-product-showcase {
         height: 280px;
     }
-    
+
     .product-circle {
         width: 130px;
         height: 130px;
     }
-    
+
     .circle-1 {
         top: 30px;
     }
-    
+
     .circle-2 {
         top: 70px;
     }
-    
+
     .circle-3 {
         bottom: 30px;
         left: 50px;
@@ -2046,4 +2088,133 @@ textarea.form-control-dairy {
 
 .rounded-dairy {
     border-radius: 25px;
+}
+
+/* Modal css */
+/* Modal Styling */
+.modal-content {
+    background: var(--gradient-cream);
+    border-radius: 12px;
+}
+
+.modal-header {
+    background: var(--gradient-dairy);
+    color: var(--milk-white);
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.form-control {
+    border: 2px solid var(--dark-cream);
+}
+
+.form-control:focus {
+    border-color: var(--primary-dairy);
+    box-shadow: 0 0 5px rgba(244, 164, 96, 0.5);
+}
+
+.btn-dairy {
+    background: var(--gradient-gold);
+    color: var(--milk-white);
+    border: none;
+}
+
+.btn-dairy:hover {
+    background: var(--gradient-dairy);
+    color: var(--milk-white);
+}
+
+
+/* Bread crumb  */
+/* Breadcrumb Section */
+.breadcrumb-section {
+    position: relative;
+    background: url('./img/paneer.jpg') center/cover no-repeat;
+    padding: 80px 0;
+    color: var(--milk-white);
+}
+
+.breadcrumb-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.77);
+}
+
+.breadcrumb-content {
+    position: relative;
+    z-index: 2;
+}
+
+.breadcrumb-title {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+/* Breadcrumb Styling */
+.breadcrumb {
+    background: transparent;
+    margin-bottom: 0;
+}
+
+.breadcrumb-item a {
+    color: var(--secondary-dairy);
+    text-decoration: none;
+}
+
+.breadcrumb-item.active {
+    color: var(--cream-color);
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    color: var(--secondary-dairy);
+}
+
+/* Products details css */
+/* Section Styling */
+.product-section {
+    padding: 80px 0;
+    background: var(--gradient-cream);
+}
+
+.product-image img {
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.product-title {
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--dairy-brown);
+}
+
+.product-price {
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--ghee-gold);
+    margin: 15px 0;
+}
+
+.product-description {
+    color: #555;
+    line-height: 1.7;
+}
+
+.product-features li {
+    margin-bottom: 8px;
+    color: var(--dairy-brown);
+}
+
+.btn-dairy {
+    background: var(--gradient-gold);
+    color: var(--milk-white);
+    border: none;
+    padding: 10px 25px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.btn-dairy:hover {
+    background: var(--gradient-dairy);
+    color: var(--milk-white);
 }

@@ -499,4 +499,30 @@ if ('ontouchstart' in window) {
     cursor.style.display = 'none';
 }
 
+// Enquiry modal js
+
+document.getElementById("enquiryForm").addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    let name = document.getElementById("name").value;
+    let email = document.getElementById("email").value;
+    let phone = document.getElementById("phone").value;
+    let subject = document.getElementById("subject").value;
+    let message = document.getElementById("message").value;
+
+    let whatsappMessage =
+        `*New Dairy Enquiry*%0A%0A
+*Name:* ${name}%0A
+*Email:* ${email}%0A
+*Phone:* ${phone}%0A
+*Subject:* ${subject}%0A
+*Message:* ${message}`;
+
+    let whatsappURL = "https://wa.me/919243441283?text=" + whatsappMessage;
+
+    window.open(whatsappURL, "_blank");
+});
+
+
+
 // ==================== End of JavaScript ====================
